@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block head %}
+{% endblock %}
+{% block body %}
+<form action="/result" method="POST"></form>
+<center>
+    <h1>PASSWORD GENERATOR</h1>
+    {% if password %}
+    <h3>Suggested Password is</h3>
+    <h2>{{ password }}</h2>
+    {% endif %}
+    <form action="/intro" method="post">
+        <input type="submit" value="Return">
+    </form>
+</center>
+{% endblock %}
